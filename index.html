@@ -1,47 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charity Water Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Charity: Water Landing Page</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Hero Section: This is the main banner at the top of the page -->
-    <section class="hero">
-        <!-- Main headline -->
-        <h1>Clean Water for Everyone</h1>
-        <!-- Subheadline -->
-        <p>Join us in bringing safe, clean water to communities in need.</p>
-    </section>
+  <nav class="navbar">
+    <div class="navbar-left">
+      <img src="img/water-can-transparent.png" alt="Charity Water Logo" class="logo">
+      <h2>Charity: Water</h2>
+    </div>
+    <div style="display: flex; align-items: center;">
+      <button class="sign-in-btn">Sign In</button>
+      <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <div class="nav-links" id="navLinks">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Projects</a>
+      <a href="#">Get Involved</a>
+      <a href="#">Donate</a>
+    </div>
+  </nav>
 
-    <!-- Story Section: This tells the story of the nonprofit -->
-    <section class="story">
-        <h2>Our Story</h2>
-        <p>
-         
-    </section>
+  <section class="hero">
+    <div class="content">
+      <h1>Charity: Water</h1>
+      <p>
+        Charity: Water empowers student activists to drive real-world change by delivering GPS-tagged, sensor-monitored clean water projects with full transparency—so you can see exactly how your efforts translate into impact and advocate for sustainable solutions with evidence you trust.
+      </p>
+      <p class="subtext">
+        Partner with charity: water to fund GPS-tracked, sensor-monitored clean water projects—100% of your efforts go directly to the cause, and you’ll see the impact firsthand.
+      </p>
+      <button class="donate-btn">Donate Now</button>
+    </div>
+  </section>
 
-    <!-- Real-World Impact Story Section -->
-    <section class="impact-story">
-        <!-- Section headline -->
-        <h2>Real Impact: Meet Amina</h2>
-        <!-- Container for image and text -->
-        <div class="impact-content">
-            <!-- Impact image -->
-            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Amina smiling with clean water" class="impact-image">
-            <!-- Impact story text -->
-            <p>
-                Amina used to walk miles every day to collect water for her family. Thanks to your support, her village now has a clean water well. Amina can go to school and her family is healthier and happier.
-            </p>
-        </div>
-    </section>
+  <footer>
+    Contact us: <a href="mailto:team@charitywater.org">team@charitywater.org</a> | Phone: 1(646) 688-2323
+  </footer>
 
-    <!-- Call-to-Action Section: This encourages visitors to take action -->
-    <section class="call-to-action">
-        <h2>Make a Difference</h2>
-        <p>Your support can help save lives. Every donation brings us closer to a world with clean water for all.</p>
-        <a href="#" class="donate-button">Donate Now</a>
-    </section>
+  <script>
+    function toggleMenu() {
+      const navLinks = document.getElementById('navLinks');
+      const hamburger = document.getElementById('hamburger');
+      navLinks.classList.toggle('open');
+      hamburger.classList.toggle('active');
+    }
+  </script>
 </body>
 </html>
